@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Section } from '../Reusable/Styles';
 
-const Projects = ({ history }) => (
+const Title = ({ history }) => (
 	<Section>
-		Projects
+		Title
 	</Section>
 );
 
-export default Projects;
+export default Title;

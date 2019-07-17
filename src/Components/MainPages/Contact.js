@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { Section } from '../Reusable/Styles';
 
 const Contact = ({ history }) => (
-	<h1>
+	<Section id='contact'>
 		Contact
-	</h1>
+	</Section>
 );
 
 export default Contact;

@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { Section } from '../Reusable/Styles';
 
 const About = ({ history }) => (
-	<h1>
+	<Section>
 		About
-	</h1>
+	</Section>
 );
 
 export default About;

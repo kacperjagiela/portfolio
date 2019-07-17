@@ -1,38 +1,31 @@
 import * as React from 'react';
-import { Menu, MenuItem, MenuLink } from './Styles';
-import home from '../../public/icons/home.svg';
-import contact from '../../public/icons/contact.svg';
-import about from '../../public/icons/about.svg';
-import projects from '../../public/icons/projects.svg';
-
+import { Menu, MenuItem, MenuLink, Sider } from './Styles';
 
 const NavigationSider = () => (
-	<div style={{
-		width: '10%', height: '100vh', float: 'left',
-	}}>
+	<Sider>
 		<Menu>
-			<MenuItem>
-				<MenuLink href='/'>
-					jeden
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink href='/about'>
-					dwa
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink href='/projects'>
-					trzy
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink href='/contact'>
-					cztery
-				</MenuLink>
-			</MenuItem>
+		<MenuLink href='#contact'>
+				<MenuItem>
+					Contact
+				</MenuItem>		
+			</MenuLink>
+			<MenuLink href='#projects'>
+				<MenuItem>
+					Projects
+				</MenuItem>		
+			</MenuLink>
+			<MenuLink href='#about'>
+				<MenuItem>
+					About
+				</MenuItem>		
+			</MenuLink>
+			<MenuLink href='#home'>
+				<MenuItem>
+					Home
+				</MenuItem>		
+			</MenuLink>
 		</Menu>
-	</div>
+	</Sider>
 );
 
 export default NavigationSider;

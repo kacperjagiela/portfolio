@@ -7,8 +7,10 @@ body {
     sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
 	background-color: #ecf0f1;
+	width:100vw;
+	min-height:100vh;
+	overflow-x: hidden;
 }
 
 code {
