@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Section } from '../Reusable/Styles';
 
-const Projects = ({ history }) => (
-	<Section>
+const Projects = () => (
+	<Section id="projects">
 		Projects
 	</Section>
 );

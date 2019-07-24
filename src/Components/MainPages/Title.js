@@ -1,9 +1,14 @@
 import * as React from 'react';
-import { Section } from '../Reusable/Styles';
+import { BackgroundImg, Section, Name } from '../Reusable/Styles';
+import title from '../../public/backgrounds/title1.jpg';
 
-const Title = ({ history }) => (
-	<Section>
-		Title
+
+const Title = () => (
+	<Section id="home" style={{ position: 'relative' }}>
+		<BackgroundImg url={title} />
+		<Name>
+			Kacper Jagieła
+		</Name>
 	</Section>
 );
 
