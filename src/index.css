@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Saira+Stencil+One&display=swap');
 
 body {
 	margin: 0;
@@ -11,6 +11,10 @@ body {
 	width:100vw;
 	height:100vh;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background: #000000;
+	background: -webkit-linear-gradient(to right, #434343, #000000);
+	background: linear-gradient(to left, #434343, #000000);
 }
 
 code {

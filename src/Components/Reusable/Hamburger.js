@@ -1,49 +1,38 @@
+/* eslint-disable react/jsx-indent */
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Bar = styled.div`
-	width: 35px;
-	height: 5px;
-	background-color: #333;
-	margin: 6px 0;
+	width: 30px;
+	height: 4px;
+	background-color: white;
+	margin: 4px 0;
 	transition: 0.4s;
 `;
 
-const Hamburger = ({ collapsed, handleCollapsing }) => {
-	if (collapsed) {
-		return (
-			<div
-				style={{
-					display: 'inline-block', cursor: 'pointer', zIndex: 3, position: 'absolute', right: '20px',
-				}}
-				onClick={handleCollapsing}
-				onKeyPress={handleCollapsing}
-				role="button"
-				tabIndex="0"
-			>
-				<Bar />
-				<Bar />
-				<Bar />
-			</div>
-		);
-	}
-	return (
-		<div
-			style={{
-				display: 'inline-block', cursor: 'pointer', zIndex: 3, float: 'right', paddingRight: '15px',
-			}}
-			onClick={handleCollapsing}
-			onKeyPress={handleCollapsing}
-			role="button"
-			tabIndex="0"
-		>
-			<Bar style={{ transform: 'rotate(-45deg) translate(-9px, 6px' }} />
-			<Bar style={{ opacity: 0 }} />
-			<Bar style={{ transform: 'rotate(45deg) translate(-8px, -8px)' }} />
-		</div>
-	);
-};
+const HamburgerContainer = styled.div`
+	display: inline-block;
+	cursor: pointer;
+	z-index: 3;
+	position: absolute;
+	right: 8px;
+	padding: 4px;
+`;
+
+const Hamburger = ({ collapsed, handleCollapsing }) => (
+	<HamburgerContainer
+		onClick={handleCollapsing}
+		onKeyPress={handleCollapsing}
+		role="button"
+		tabIndex="0"
+		style={{ background: !collapsed ? 'rgb(0,0,0,0.0)' : 'rgb(192,57,43, 0.9)' }}
+	>
+		<Bar style={{ transform: !collapsed ? 'rotate(-45deg) translateX(-6px) translateY(5px)' : 'none' } } />
+		<Bar style={{ opacity: !collapsed ? '0' : '1' }} />
+		<Bar style={{ transform: !collapsed ? 'rotate(45deg) translateX(-6px) translateY(-5px)' : 'none' }} />
+	</HamburgerContainer>
+);
 
 Hamburger.propTypes = {
 	collapsed: PropTypes.bool.isRequired,

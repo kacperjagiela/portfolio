@@ -21,9 +21,9 @@ class NavigationSider extends React.Component {
 		if (!collapsed) {
 			return (
 				<Sider>
+					<Hamburger collapsed={collapsed} handleCollapsing={this.handleCollapsing} />
 					<Menu>
-						<Hamburger collapsed={collapsed} handleCollapsing={this.handleCollapsing} />
-						<MenuLink href="#contact">
+						<MenuLink href="#contact" style={{ marginRight: '50px' }}>
 							<MenuItem>
 								Contact
 							</MenuItem>
