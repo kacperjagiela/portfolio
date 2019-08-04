@@ -4,20 +4,23 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Bar = styled.div`
-	width: 30px;
-	height: 4px;
+	width: 40px;
+	height: 5px;
 	background-color: white;
-	margin: 4px 0;
+	margin: 6px 0;
 	transition: 0.4s;
 `;
 
 const HamburgerContainer = styled.div`
+	height:5vh;
 	display: inline-block;
 	cursor: pointer;
 	z-index: 3;
 	position: absolute;
-	right: 8px;
-	padding: 4px;
+	padding:4px;
+	padding-top:6px;
+	badding-bottom:1px;
+	right:14px;
 `;
 
 const Hamburger = ({ collapsed, handleCollapsing }) => (
@@ -26,11 +29,11 @@ const Hamburger = ({ collapsed, handleCollapsing }) => (
 		onKeyPress={handleCollapsing}
 		role="button"
 		tabIndex="0"
-		style={{ background: !collapsed ? 'rgb(0,0,0,0.0)' : 'rgb(192,57,43, 0.9)' }}
+		style={{ background: 'rgb(0,0,0,0.0)' }}
 	>
-		<Bar style={{ transform: !collapsed ? 'rotate(-45deg) translateX(-6px) translateY(5px)' : 'none' } } />
+		<Bar style={{ transform: !collapsed ? 'rotate(-45deg) translateX(-9px) translateY(6px)' : 'none' }} />
 		<Bar style={{ opacity: !collapsed ? '0' : '1' }} />
-		<Bar style={{ transform: !collapsed ? 'rotate(45deg) translateX(-6px) translateY(-5px)' : 'none' }} />
+		<Bar style={{ transform: !collapsed ? 'rotate(45deg) translateX(-9px) translateY(-6px)' : 'none' }} />
 	</HamburgerContainer>
 );
 

@@ -23,7 +23,7 @@ class NavigationSider extends React.Component {
 				<Sider>
 					<Hamburger collapsed={collapsed} handleCollapsing={this.handleCollapsing} />
 					<Menu>
-						<MenuLink href="#contact" style={{ marginRight: '50px' }}>
+						<MenuLink href="#contact" style={{ marginRight: '60px' }}>
 							<MenuItem>
 								Contact
 							</MenuItem>

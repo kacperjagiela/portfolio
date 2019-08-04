@@ -10,7 +10,7 @@ export const AboutTitle = styled.div`
 	padding-left:15%;
 	padding-top:10px;
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		font-size:5vw;
 	}
 `;
@@ -23,7 +23,7 @@ export const AboutParagraph = styled.div`
     font-family: 'Oswald', sans-serif;;
 	text-align: justify;
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		font-size:3.5vw;
 	}
 `;
@@ -39,44 +39,44 @@ export const BackgroundImg = styled.div`
 	border-left:2px solid black;
 `;
 
+export const Important = styled.span`
+	color: rgb(192,57,43);
+`;
+
 export const Section = styled.section`
 	width:100vw;
-	min-height:50vh;
+	min-height:30vh;
 	background: #000000;
 	background: -webkit-linear-gradient(to right, #434343, #000000);
 	background: linear-gradient(to left, #434343, #000000);
 
-	@media screen and (max-width:768px){
-		min-height:40vh;
+	@media screen and (max-width:767px){
+		min-height:20vh;
 	}
 `;
 
 export const Sider = styled.div`
 	width: 100vw;
-	height: 4vh;
+	height: 5vh;
 	color: #e3e6e4;
 	position: fixed;
 	font-size:20px;
 	top: 0px;
 	z-index:2;
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		font-size:14px;
 	}
 	
 `;
 
 export const Skills = styled.ul`
-	font-size: 1.5vw;
-	width:40%;
-	padding-left:30%;
-	@media screen and (max-width:768px){
-		font-size:2.7vw;
-	}
+	width:50%;
+	padding-left:25%;
 `;
 
 export const Name = styled.div`
 	color: #e3e6e4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Stencil One', cursive;
 	font-weight: bold;
 	font-size:5vw;
 	position:absolute;
@@ -88,7 +88,7 @@ export const Name = styled.div`
 	width: 60%;
 	z-index: 1;
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		font-size:7.5vw;
 	}
 `;
@@ -119,8 +119,8 @@ export const MenuLink = styled.a`
 	margin-right: 10px;
 	color: inherit;
 	text-decoration: none;
-	padding-top:7px;
-	padding-bottom:5px;
+	padding-top:9px;
+	padding-bottom:12px;
 	font-size:2vw;
 	text-decoration: underline;
 	border:1px solid transparent;
@@ -128,9 +128,10 @@ export const MenuLink = styled.a`
 
 	&:hover{
 		background: #555;
+		transition: all 0.5s ease;
 	}
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		padding-top:5px;
 		font-size:3vw;
 	}
@@ -142,7 +143,7 @@ export const MenuItem = styled.li`
 	padding:10px;
 	display:inline;
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width:767px){
 		padding-top:5px;
 		font-size:4vw;
 	}	
@@ -159,4 +160,27 @@ export const ProjectsContainer = styled.div`
 export const ProjectsItem = styled.img`
 	width:100%;
 	flex-grow: 1;
+`;
+
+export const ResumeButton = styled.button`
+	border: 2px solid ;
+	border-bottom-width:4px;
+	border-radius:15px;
+	color: #ecf0f1;
+	font-size:2vw;
+	background-color: rgb(192,57,43);
+	padding:10px;
+	cursor:pointer;
+	transition:border-color 0.3s, color 0.3s, background-color 0.3s;
+
+	&:hover{
+		background-color: #ecf0f1;
+		border-color: rgb(192,57,43);
+		color:rgb(192,57,43);
+		transition: 0.3s all ease-in;
+	}
+
+	@media screen and (max-width:767px){
+		font-size:3vw;
+	}
 `;

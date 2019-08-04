@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import * as React from 'react';
 import {
-	AboutTitle, Section, AboutParagraph, Skills,
+	AboutTitle, Section, AboutParagraph, Skills, Important,
 } from '../Reusable/Styles';
 
 const About = () => (
@@ -10,7 +10,9 @@ const About = () => (
 			About me
 		</AboutTitle>
 		<AboutParagraph style={{ textAlign: 'center' }}>
-			I am a passionate junior frontend developer located in Wrocław. I am currently looking for first real job. My interests are: web technologies, VR, AR. My hobby is reading books. Skills in which I feel confident:
+			I am a passionate
+			<Important> junior frontend developer </Important>
+			located in <span style={{ color: '#68A063' }}>Wrocław</span>. I am currently looking for first real job. My interests are: web technologies, VR, AR. My hobby is reading books. Skills in which I feel confident:
 			<br />
 			<Skills>
 				<li>
@@ -23,7 +25,7 @@ const About = () => (
 					<p>Javascript</p>
 				</li>
 				<li>
-					<p>React (Styled Components, React Router)</p>
+					<p>React (styled-components, react-router)</p>
 				</li>
 				<li>
 					<p>GIT</p>

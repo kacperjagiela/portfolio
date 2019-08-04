@@ -1,7 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BackgroundImg, Section, Name } from '../Reusable/Styles';
-import title from '../../public/backgrounds/title1.jpg';
+import {
+	BackgroundImg, Section, Name, ResumeButton,
+} from '../Reusable/Styles';
+import title from '../../public/backgrounds/title.jpg';
 
 const TitleSection = styled(Section)`
 	height:50vh;
@@ -15,6 +17,13 @@ const Title = () => (
 		<BackgroundImg url={title} />
 		<Name>
 			Kacper Jagieła
+			<br />
+			<a href="pdf">
+				{/* TODO: Add resume */}
+				<ResumeButton>
+					resume
+				</ResumeButton>
+			</a>
 		</Name>
 	</TitleSection>
 );
