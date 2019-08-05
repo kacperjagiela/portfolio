@@ -1,22 +1,22 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Typist from 'react-typist';
 import {
 	BackgroundImg, Section, Name, ResumeButton,
 } from '../Reusable/Styles';
 import title from '../../public/backgrounds/title.jpg';
 
 const TitleSection = styled(Section)`
-	height:50vh;
-	@media screen and (max-width:768px){
-		height:40vh;
-	}
+	height:95vh;
 `;
 
 const Title = () => (
-	<TitleSection id="home" style={{ position: 'relative' }}>
+	<TitleSection style={{ position: 'relative' }}>
 		<BackgroundImg url={title} />
 		<Name>
-			Kacper Jagieła
+			<Typist cursor={{ element: '.' }}>
+				Kacper Jagieła
+			</Typist>
 			<br />
 			<a href="pdf">
 				{/* TODO: Add resume */}

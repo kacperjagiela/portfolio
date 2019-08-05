@@ -14,9 +14,12 @@ const iconStyle = {
 };
 
 const Contact = () => (
-	<Section id="contact">
+	<Section style={{
+		display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column',
+	}}
+	>
 		<AboutTitle>
-			Contact
+			socials
 		</AboutTitle>
 		<AboutParagraph style={contactStyle}>
 			<p>

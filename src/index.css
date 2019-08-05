@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grenze|Oswald|Roboto&display=swap');
+
+html {
+	font-size: 100%;
+}
+
+@media screen and (max-width:767px){
+	html {
+		font-size: 70%;
+	}
+}
 
 body {
 	margin: 0;
@@ -7,9 +17,10 @@ body {
     sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #ecf0f1;
+	color:white;
 	width:100vw;
-	height:100vh;
+	max-height:100vh;
+	max-height:100vh;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	background: #000000;
@@ -18,7 +29,7 @@ body {
 }
 
 i {
-	color:rgb(192,57,43);
+	color:#686de0;
 }
 
 code {

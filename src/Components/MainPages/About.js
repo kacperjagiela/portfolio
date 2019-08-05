@@ -1,39 +1,27 @@
-/* eslint-disable max-len */
 import * as React from 'react';
 import {
-	AboutTitle, Section, AboutParagraph, Skills, Important,
+	AboutTitle, Section, AboutParagraph, Important,
 } from '../Reusable/Styles';
 
 const About = () => (
-	<Section id="about" style={{ paddingBottom: '1vh' }}>
+	<Section style={{
+		display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column',
+	}}
+	>
 		<AboutTitle>
-			About me
+			about me
 		</AboutTitle>
-		<AboutParagraph style={{ textAlign: 'center' }}>
+		<AboutParagraph style={{
+			width: '60%', paddingLeft: '20%', paddingRight: '20%', lineHeight: '2.3 rem', textAlign: 'center',
+		}}
+		>
 			I am a passionate
 			<Important> junior frontend developer </Important>
-			located in <span style={{ color: '#68A063' }}>Wrocław</span>. I am currently looking for first real job. My interests are: web technologies, VR, AR. My hobby is reading books. Skills in which I feel confident:
-			<br />
-			<Skills>
-				<li>
-					<p>HTML5</p>
-				</li>
-				<li>
-					<p>CSS3</p>
-				</li>
-				<li>
-					<p>Javascript</p>
-				</li>
-				<li>
-					<p>React (styled-components, react-router)</p>
-				</li>
-				<li>
-					<p>GIT</p>
-				</li>
-				<li>
-					<p>Node.js</p>
-				</li>
-			</Skills>
+			located in
+			<Important> Wrocław</Important>
+			. I am currently looking for first real job. My interests are: web technologies, VR, AR. My hobby is reading books and studying new things.
+			Ever since I was a kid, I would always dream about creating something everyone would enjoy using and looking at.
+			That is why I decided to learn how to create modern, responsive websites.
 		</AboutParagraph>
 	</Section>
 );
