@@ -9,7 +9,7 @@ const About = () => (
 	}}
 	>
 		<AboutTitle>
-			about me
+			About me
 		</AboutTitle>
 		<AboutParagraph style={{
 			width: '60%', paddingLeft: '20%', paddingRight: '20%', lineHeight: '2.3 rem', textAlign: 'center',
@@ -19,9 +19,7 @@ const About = () => (
 			<Important> junior frontend developer </Important>
 			located in
 			<Important> Wrocław</Important>
-			. I am currently looking for first real job. My interests are: web technologies, VR, AR. My hobby is reading books and studying new things.
-			Ever since I was a kid, I would always dream about creating something everyone would enjoy using and looking at.
-			That is why I decided to learn how to create modern, responsive websites.
+			. Besides being into web technologies I am interested in many other things featuring VR, AR and thing I enjoy the most, chess. I love to plan ahead, learn new skills and develop myself further in them. I like to work as a team where we are able to learn from eachother. My native language is Polish and I am fluent in English.
 		</AboutParagraph>
 	</Section>
 );

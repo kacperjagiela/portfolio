@@ -6,24 +6,24 @@ import {
 const NavigationSider = () => (
 	<Sider>
 		<Menu>
-			<MenuLink href="/">
+			<MenuLink to="/">
 				<MenuItem>
-					home
+					Home
 				</MenuItem>
 			</MenuLink>
-			<MenuLink href="/about">
+			<MenuLink to="/about">
 				<MenuItem>
-					about
+					About
 				</MenuItem>
 			</MenuLink>
-			<MenuLink href="/projects">
+			<MenuLink to="/projects">
 				<MenuItem>
-					projects
+					Projects
 				</MenuItem>
 			</MenuLink>
-			<MenuLink href="/socials" style={{ marginRight: '60px' }}>
+			<MenuLink to="/socials" style={{ marginRight: '60px' }}>
 				<MenuItem>
-					socials
+					Socials
 				</MenuItem>
 			</MenuLink>
 		</Menu>

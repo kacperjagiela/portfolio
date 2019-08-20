@@ -1,11 +1,12 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 import { fadeIn } from 'react-animations';
 
 export const AboutTitle = styled.div`
 	width:100%;
 	font-size:3rem;
 	padding-bottom: 1vw;
-    font-family: 'Grenze', serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color:#ecf0f1;
 	padding-top:10px;
@@ -22,15 +23,25 @@ export const AboutParagraph = styled.div`
 	animation: 1s ${keyframes`${fadeIn}`} ease;
 `;
 
-export const BackgroundImg = styled.div`
-	background-image: url("${props => props.url}");
-	width:100%;
-	height:100%;
-	background-size: 100% 100%;
-	background-repeat:no-repeat;
-	filter: grayscale(100%);
-	padding-left:-10px;
-	border-left:2px solid black;
+const slide = keyframes`
+	0% {
+    	transform:translateX(-25%);
+  	}
+  	100% {
+    	transform:translateX(25%);
+  	}
+`;
+
+export const Background1 = styled.div`
+	animation:${slide} 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(-60deg, #2c3e50 50%, #657c94 50%);
+	bottom:0;
+	left:-50%;
+	opacity:.5;
+	position:fixed;
+	right:-50%;
+	top:0;
+	z-index:0;
 `;
 
 export const Important = styled.span`
@@ -90,7 +101,7 @@ export const Menu = styled.ul`
 	animation: 0.5s ${keyframes`${fadeIn}`} ease;
 `;
 
-export const MenuLink = styled.a`
+export const MenuLink = styled(Link)`
 	margin-right: 10px;
 	color: inherit;
 	text-align:center;
@@ -142,7 +153,7 @@ export const ProjectLink = styled.a`
 
 	@media screen and (max-width:768px){
 		width:50%;
-		height:40%;
+		height:30%;
 		margin-top:1vh;
 		margin-bottom:1vh;
 		margin-right:25%;
@@ -152,25 +163,26 @@ export const ProjectLink = styled.a`
 
 export const ProjectsItem = styled.img`
 	width:100%;
+	height:100%;
 	flex-grow: 2;
 `;
 
 export const ResumeButton = styled.button`
 	border: 2px solid ;
 	border-bottom-width:4px;
-	color: #34495e;
+	color: #ecf0f1;
 	border-radius:2px;
 	font-size:2rem;
-	background-color: #1e272e;
+	background-color: #2c3e50;
 	padding:10px;
 	cursor:pointer;
 	transition:border-color 0.3s, color 0.3s, background-color 0.3s;
 	animation: 1s ${keyframes`${fadeIn}`} ease;
 
 	&:hover{
-		background-color: #34495e;
-		border-color: #1e272e;
-		color:#1e272e;
+		background-color: #ecf0f1;
+		border-color: #2c3e50;
+		color:#2c3e50;
 		transition: 0.3s all ease-in;
 	}
 `;

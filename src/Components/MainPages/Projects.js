@@ -13,7 +13,7 @@ const Projects = () => (
 	}}
 	>
 		<AboutTitle>
-			projects
+			Projects
 		</AboutTitle>
 		<AboutParagraph style={{ textAlign: 'center' }}>
 			You can find all of my projects on my <a href='http://github.com/kacperjagiela' style={{ color: 'inherit' }}>github</a>

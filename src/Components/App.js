@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import { Main } from './Reusable/Styles';
 import Title from './MainPages/Title';
 import About from './MainPages/About';
@@ -8,7 +8,7 @@ import Contact from './MainPages/Contact';
 import NavigationSider from './Reusable/NavigationSider';
 
 const App = () => (
-	<BrowserRouter>
+	<HashRouter basename='/'>
 		<Main>
 			<NavigationSider />
 			<Switch>
@@ -18,7 +18,7 @@ const App = () => (
 				<Route path='/socials' exact component={Contact} />
 			</Switch>
 		</Main>
-	</BrowserRouter>
+	</HashRouter>
 );
 
 export default App;

@@ -19,7 +19,7 @@ const Contact = () => (
 	}}
 	>
 		<AboutTitle>
-			socials
+			Socials
 		</AboutTitle>
 		<AboutParagraph style={contactStyle}>
 			<p>
