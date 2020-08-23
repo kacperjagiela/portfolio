@@ -12,7 +12,7 @@ const StyledMenu = styled.nav<Props>`
     height: 100vh;
     text-align: left;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,6 +21,7 @@ const StyledMenu = styled.nav<Props>`
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
         width: 100%;
+        padding: 0;
     }
 
     a {

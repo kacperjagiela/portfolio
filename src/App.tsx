@@ -21,8 +21,8 @@ const App = () => {
             <BrowserRouter>
                 <div ref={node}>
                     <Burger open={open} setOpen={setOpen} />
-                    <Menu open={open} />
                 </div>
+                <Menu open={open} />
                 <Switch>
                     <Route exact path="/projects" component={Projects} />
                     <Route exact path="/about" component={About} />
