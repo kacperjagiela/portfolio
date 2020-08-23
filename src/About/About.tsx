@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { FadeInDiv } from '../styles/common';
 
 const About = () => {
     return (
-        <h1>About</h1>
+        <FadeInDiv>
+            <h1>About me:</h1>
+        </FadeInDiv>
     );
 };
 

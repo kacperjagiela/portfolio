@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import useOnClickOutside from './utils/hooks/useOnClickOutside';
 import GlobalStyles from './styles/global';
 import theme from './styles/theme';
-import Mainpage from './mainpage/Mainpage';
+import Mainpage from './home/Home';
 import Projects from './projects/Projects';
 import About from './about/About';
 import Contact from './contact/Contact';
@@ -15,6 +15,7 @@ const App = () => {
     const [open, setOpen] = useState(false);
     const node = useRef<HTMLDivElement>(null);
     useOnClickOutside(node, () => setOpen(false));
+
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
