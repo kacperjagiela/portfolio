@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
-const ContactLinks = styled.div`
+export const ContactLinks = styled.div`
     a {
         color: ${({ theme }) => theme.primaryLink};
         transition: 0.2s;
 
         &:hover {
-            color: ${({ theme }) => theme.primaryLight};
+            color: ${({ theme }) => theme.primaryHover};
         }
     }
 `;
 
-export default ContactLinks;
+export const ContactIcon = styled.img`
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+`;
