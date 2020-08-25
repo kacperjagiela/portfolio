@@ -7,7 +7,7 @@ const StyledHome = styled.div`
 
     h1 {
         a {
-            color: inherit;
+            color: ${({ theme }) => theme.primaryLink};
             text-decoration: underline;
             transition: 0.3s;
 

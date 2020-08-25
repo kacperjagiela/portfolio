@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { FadeInDiv } from '../styles/common';
+import { FadeInDiv, Title } from '../styles/common';
 
 const Projects = () => {
     return (
         <FadeInDiv>
-            <h1>Projects:</h1>
+            <Title>Projects:</Title>
         </FadeInDiv>
     );
 };

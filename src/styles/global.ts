@@ -14,7 +14,16 @@ const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
         display:flex;
         justify-content: center;
         align-items: center;
+        text-align:center;
         height:100vh;
+        min-width:100vw;
+    }
+
+    #root{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100vw;
     }
 
     code {

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { FadeInDiv, Title } from '../styles/common';
 
-const About = () => {
+const Credits = () => {
     return (
         <FadeInDiv>
-            <Title>About me:</Title>
+            <Title>Credits:</Title>
         </FadeInDiv>
     );
 };
 
-export default About;
+export default Credits;
