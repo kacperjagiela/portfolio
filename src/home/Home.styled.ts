@@ -8,6 +8,11 @@ const StyledHome = styled.div`
     img {
         width: 70%;
         margin-left: 15%;
+
+        @media (min-width: ${({ theme }) => theme.fullHD}) {
+            width: 60%;
+            margin-left: 20%;
+        }
     }
 
     h1 {

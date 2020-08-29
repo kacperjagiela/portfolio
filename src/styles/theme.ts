@@ -4,6 +4,7 @@ const theme = {
     primaryLink: '#FFFFFF',
     primaryHover: '#6D597A',
     mobile: '576px',
+    fullHD: '1920px',
 };
 
 export type ThemeType = typeof theme;
