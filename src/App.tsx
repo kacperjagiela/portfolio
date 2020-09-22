@@ -20,7 +20,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
-            <BrowserRouter>
+            <BrowserRouter basename="/portfolio">
                 <div ref={node}>
                     <Burger open={open} setOpen={setOpen} />
                 </div>
