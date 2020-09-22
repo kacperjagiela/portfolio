@@ -16,7 +16,7 @@ export const FadeInDiv = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 3rem;
+    font-size: calc(1.3rem + (1.5 - 1.3) * ((100vw - 18rem) / (30 - 21)));
 `;
 
 export default FadeInDiv;

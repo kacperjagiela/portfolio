@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { FadeInDiv, Title } from '../styles/common';
 import { ContactLinks, ContactIcon } from './Contact.styled';
-import phoneIcon from '../images/flaticons/phone.png';
 import mailIcon from '../images/flaticons/mail.png';
 import githubIcon from '../images/flaticons/github.png';
 import linkedinIcon from '../images/flaticons/linkedin.png';
@@ -12,21 +11,15 @@ const Contact = () => {
             <Title>Contact:</Title>
             <ContactLinks>
                 <h2>
-                    <a href="tel:+48783890500">
-                        <ContactIcon src={phoneIcon} alt="phone-icon" />
-                        (+48) 783 890 500
+                    <a href="https://github.com/kacperjagiela">
+                        <ContactIcon src={githubIcon} alt="github-icon" />
+                        github.com/kacperjagiela
                     </a>
                 </h2>
                 <h2>
                     <a href="mailto:jagielakacper80@gmail.com">
                         <ContactIcon src={mailIcon} alt="mail-icon" />
                         jagielakacper80@gmail.com
-                    </a>
-                </h2>
-                <h2>
-                    <a href="https://github.com/kacperjagiela">
-                        <ContactIcon src={githubIcon} alt="github-icon" />
-                        github.com/kacperjagiela
                     </a>
                 </h2>
                 <h2>

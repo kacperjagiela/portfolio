@@ -7,10 +7,11 @@ const About = () => {
         <FadeInDiv>
             <Title>About me:</Title>
             <AboutText>
-                I am a passionate fullstack developer located in Wrocław. Besides being into web
-                technologies I am interested in VR and chess. I love to plan ahead, learn new skills
-                and develop myself further in them. I enjoy working as team. My native language is
-                Polish and I am fluent in English.
+                I am a passionate <strong>fullstack</strong> developer located in Wrocław. Besides
+                being into web technologies I am interested in VR and chess. I love to{' '}
+                <strong>plan</strong> ahead, learn new skills and develop myself further in them. I
+                enjoy working as team. My native language is <strong>Polish</strong> and I am fluent
+                in <strong>English</strong>
             </AboutText>
         </FadeInDiv>
     );
