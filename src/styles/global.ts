@@ -15,8 +15,8 @@ const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
         justify-content: center;
         align-items: center;
         text-align:center;
-        height:100vh;
-        min-width:100vw;
+        min-height:100vh;
+        width:100%;
     }
 
     #root{
